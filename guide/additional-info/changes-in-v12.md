@@ -130,6 +130,10 @@ All the `.send***()` methods have been removed in favor of one general `.send()`
 + });
 ```
 
+### Edit Message
+message.channel.send("Beep").then((sentMessage) => sentMessage.edit("Boop!"))
+
+
 ### Roles
 
 The `GuildMember.roles` Collection has been changed to a Manager in v12, so a lot of the associated methods for interacting with a member's roles have changed as well.  They're no longer on the GuildMember object itself, but instead now on the `GuildMemberRoleManager`. The Manager holds API methods and cache for the roles, in the form of `GuildMemberRoleManager#cache` which is a plain Collection.
